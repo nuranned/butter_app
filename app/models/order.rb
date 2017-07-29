@@ -14,4 +14,8 @@ private
     self.order_status_id = 1
   end
 
+  def update_subtotal
+    self[:subtotal] = subtotal
+  end
+
 end
