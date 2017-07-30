@@ -17,6 +17,17 @@ class OrderItem < ApplicationRecord
   end
 
 private
+  def item_present
+    if item.nil?
+      errors
+    end
+  end
+
+  def order_present
+    if order.nil?
+      errors
+    end
+  end
 
   def finalize
     self[:unit_price] = unit_price
