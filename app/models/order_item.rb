@@ -4,6 +4,10 @@ class OrderItem < ApplicationRecord
 
   before_save :finalize
 
+  validates :quantity, presence: true,
+  validate :item_present
+  validate :order_present 
+
   def unit_price
     if persisted?
       self[:unit_price]
