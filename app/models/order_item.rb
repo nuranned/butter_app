@@ -19,13 +19,13 @@ class OrderItem < ApplicationRecord
 private
   def item_present
     if item.nil?
-      errors
+      errors.add(:item, "not valid or not active")
     end
   end
 
   def order_present
     if order.nil?
-      errors
+      errors.add(:order, "not a valid order")
     end
   end
 
