@@ -1,0 +1,18 @@
+<nav id="custom-nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <p class="navbar-brand">
+        <%= link_to root_path, :class => "navbar-link" do %>
+        <%= image_tag "stamp.png" %>
+        <% end %>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="text-right">
+          <h1 class="cart-text"><%= render 'layouts/cart_text' %><h1>
+        </div>
+      </div>
+  </div>
+</nav>
