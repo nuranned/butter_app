@@ -1,1 +1,17 @@
-<h2>Thanks, you paid <stong><%= current_order.subtotal %></strong>!</h2>
+<div class="navbar-header">
+  <p class="navbar-brand">
+    <%= link_to root_path, :class => "navbar-link" do %>
+    <%= image_tag "stamp.png" %>
+    <% end %>
+  </p>
+</div>
+
+<div class="charges-container">
+  <div class="col-xs-1" align="center">
+      <div class="thumbnail">
+        <%= image_tag "item_img_resize.jpg", class: 'jar-img' %>
+      </div>
+        <h2>Thanks, you paid <strong>$<%= current_order.subtotal%></strong>!</h2>
+      </div>
+  </div>
+</div>

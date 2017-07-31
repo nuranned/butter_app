@@ -1,20 +1,15 @@
 <div class="item_partial">
 
-  <div class="item_image">
-    <div class="col-xs-4">
-      <%= image_tag "item_img_resize.jpg", class: 'city-bg-img' %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-8">
-      <h4><%= item.name %></h4>
-      <h6><%= item.description %></h6>
-    </div>
-    <div class="col-xs-4">
-
+  <div class="card" style="width: 50rem;">
+    <img class="card-img-top" <%= image_tag "item_img_resize.jpg" %>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-xs-8">
+          <h4><%= item.name %></h4>
+          <h6><%= item.description %></h6>
+        </div>
       <%= form_for order_item, remote: true do |form| %>
-      <h4 class "text-right">Unit Price: <span style="color: blue"><%= item.price %></span></h4>
+      <h4 class "text-right">Price: <span style="color: blue"><%= item.price %></span></h4>
         <div class="input-group">
           <%= form.number_field :quantity, value: 1, class: "form-control", min: 1 %>
           <div class="input-group-button">
@@ -23,7 +18,7 @@
           </div>
         </div>
       <% end %>
+      </div>
     </div>
-
   </div>
 </div>

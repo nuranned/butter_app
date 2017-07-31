@@ -2,11 +2,11 @@ class OrderItem < ApplicationRecord
   belongs_to :item
   belongs_to :order
 
-  before_save :finalize
-
   validates :quantity, presence: true
   validate :item_present
   validate :order_present
+
+  before_save :finalize
 
   def unit_price
     if persisted?
