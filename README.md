@@ -3,12 +3,12 @@
 # ButterBuyer (dba 16% of you)
 
 ## What is this project?
-Ecommerce site
+Ecommerce site,
 A one stop shop for all natural and organic butters. 
 Developed for Baby, safe for Mom too
 
 ## Planned features:
-Users can login and view previous order information
+Users can login and view previous order information,
 Show more information on product development and Ingredients used.
 
 ## Deployment
