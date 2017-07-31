@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# ButterBuyer (dba 16% of you)
 
-Things you may want to cover:
+## What is this project?
+Ecommerce site
+A one stop shop for all natural and organic butters. 
+Developed for Baby, safe for Mom too
 
-* Ruby version
+## Planned features:
+Users can login and view previous order information
+Show more information on product development and Ingredients used.
 
-* System dependencies
+## Deployment
+https://fast-reaches-22987.herokuapp.com/
 
-* Configuration
+## GitHub
+https://github.com/nuranned/butter_app
 
-* Database creation
+## Built With
+* Ruby on Rails
+* bootstrap 3.3.7
+* jquery-rails
+* stripe
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Invaluable Resources
+* RichonRails: https://richonrails.com/articles/ecommerce-site-from-scratch-part-6-the-shopping-cart
+* https://www.udemy.com/learn-how-to-build-a-ruby-on-rails-marketplace-from-scratch/learn/v4/content
+* https://github.com/tonnamb/ecommerce_stripe
+* https://github.com/narchiii/learnRailsPayments
+* https://www.youtube.com/watch?v=K-l2XhRyVEo
+* https://www.emberscreencasts.com/posts/174-shopping-cart-part-1-basics
+* https://jedrekdomanski.wordpress.com/
